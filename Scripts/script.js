@@ -11,7 +11,7 @@ function summon(creature){
     var direction = Math.floor(Math.random() * 10) < 5 ? 180: 0
     img.style.transform = "rotateY("+direction+"deg)"
     game.appendChild(img)   
-    setTimeout(walk,10000)
+    setTimeout(walk,1000)
     function walk(){
         if(creature.duration > 0){
             rest = Math.floor(Math.random()*10) < 7 ? 0.5 : (-0.5)
@@ -24,7 +24,7 @@ function summon(creature){
             }
             function nothing(){}
             creature.duration--
-            setTimeout(walk,12000)
+            setTimeout(walk,1000)
         }
         else{
             game.removeChild(img)
@@ -90,13 +90,13 @@ function startGame(){
         "\nI am not pretty powerful yet so the spell could kill your browser.\nGood luck!"
         txtArray.push(txt)
         var i = 0       
-        setTimeout(replace, 1000)
+        setTimeout(replace, 10000)
         function replace(){
             game.removeChild(txtDiv)
             txtDiv = dialog(txtArray[i], imgSrc)
             i++
             if(i <= txtArray.length){
-                setTimeout(replace,1200)
+                setTimeout(replace,12000)
             }
             else{
                 game.removeChild(txtDiv)                
