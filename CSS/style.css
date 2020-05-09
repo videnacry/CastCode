@@ -1,0 +1,129 @@
+*{
+    border: hidden;
+    border-radius: 3px;
+    font-size: 1.3vw;
+    padding: 0;
+    margin: 0;
+}
+button,ul,form,img,#menu,#cover,#game,.code,.card{
+    position: absolute;
+}
+button{
+    color: white;
+    background-color: black;
+    width:20%;
+    height: 3vw;
+}
+form{
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 5vw;
+    top: 34vw;
+    right: 10%;
+}
+ul{
+    padding-left: 25%;
+    top: 16%;
+    list-style: none;
+}
+#manual{
+    top: 35vw;
+    left: 10%;
+}
+#start{
+    top: 38vw;
+    left: 40%;
+}
+.main{
+    position: relative;
+    width: 100vw;
+    height: 55vw;
+}
+.main>div{
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    transition: left 1.5s;
+}
+.main>div:first-of-type{
+    z-index: 2;
+    transition: top 3s;
+}
+.main>div:nth-of-type(3){
+    z-index: 0;
+}
+#cover>img{
+    top: 10%;
+    width: 70%;
+    left: 15%;
+}
+#game>img{
+    height:10%;
+    bottom: 13%;
+}
+#game{
+    cursor: zoom-in;
+}
+#menu>img, #game>img:first-of-type{
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+}
+.main>.translate_top{
+    top: -100%;
+    background-color: transparent
+}
+.main>.translate_right{
+    left: -100%;
+}
+#cast,.box_button{
+    position: fixed;
+    background-color: rgb(255, 255, 141);
+    color: rgb(175, 0, 0);
+    border: solid rgb(255, 205, 87);
+    width: 10%;
+    height: 2vw;
+    top: 1%;
+    left: 1%;
+}
+.spell{
+    position: fixed;
+    top: 4vw;
+    left: 1%;
+    perspective: 1000px;
+}
+.code,.card{
+    backface-visibility: hidden;
+    transition: transform 2s;   
+}
+.code{
+    transform: rotateY(0deg);
+}
+.black_background{
+    background-color: rgb(63, 63, 63);
+    opacity: 0.9;
+    color: rgb(137, 137, 255);
+}
+.card{
+    transform: rotateY(360deg);
+    opacity: 0.3;
+    background: url("../Assets/Environment.png");
+    background-size: cover;
+}
+.rotate{
+    transform: rotateY(180deg);
+}
+span{
+    text-shadow: 0 0 10px rgb(0, 132, 255);
+}
+.box_button{
+    width: 2vw;
+    top: 95%;
+    left: 97%;
+    z-index: 1;
+}

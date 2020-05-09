@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <link href="CSS/style.css" type="text/css" rel="stylesheet">
+        <title>CastCode</title>
+    </head>
+    <body>
+        <div class="main">
+            <div id="cover" class="cover">
+                <img src="Assets/Cover.png" alt="cover image">
+                <button id="start">Start Game</button>
+            </div>
+            <div id="menu" class="menu">
+                <img src="Assets/Menu.png" alt="menu image">
+                <button id="manual">Manual</button>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">male avatar</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">female avatar</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div>
+                <div id="game" class="game" style="width:100%; height: 100%;">
+                    <img src="Assets/Background.png" alt="background image">
+                    <img src="" alt="player" id="player">
+                    <img src="" alt="rival" id="rival">
+                </div>
+                <button id="cast"><span>Cast Code</span></button>
+                <div class="spell">
+                    <textarea class="code rotate black_background" cols="30" rows="10" ></textarea>
+                    <textarea class="card" cols="30" rows="10" disabled>
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <audio src="Mp3/CrystalCave.mp3" loop></audio>
+        <button class="box_button" id="audio_button" ><span>&sung;</span></button>
+    </body>
+    <script src="Scripts/script.js"></script>
+</html>
